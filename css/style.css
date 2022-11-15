@@ -13,7 +13,14 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #FFFFFF;
+    background-color: #e5e5e5;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header {
@@ -29,6 +36,11 @@ body {
     justify-content: space-between;
     height: 33px;
     align-items: center;
+    background-color: #FFFFFF;
+}
+
+.status-bar p {
+    margin-left: 16px;
 }
 
 .icones {
@@ -50,7 +62,7 @@ body {
     font-weight: 400;
 }
 
-.hoje {
+.dia {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -63,14 +75,55 @@ body {
 
 .cards {
     width: 360px;
+    height: 170px;
     display: flex;
     flex-direction: column;
+    background: #FFFFFF;
+    border-radius: 8px;
     gap: 16px;
 }
 
-.remota .header-card {
+.consulta-card {
+    height: 186px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 16px 16px 0;
+    margin-bottom: 16px;
+}
+
+.consulta-card_paciente {
+    display: flex;
+    align-items: center;
+}
+
+.header-card .card-chat {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: 100px;
+    border: none;
+    background: #f6f6f6;
+    background-image: url('../assets/chat.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.consulta-card_paciente div {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 16px;
+}
+
+.consulta-card .header-card {
     border-bottom: 1px solid #e5e5e5;
     width: 328px;
+    height: 69px;
+}
+
+.consulta-card_paciente span>span {
+    margin-left: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .cards span {
@@ -82,4 +135,41 @@ body {
 .cards p {
     font-size: 12px;
     font-weight: 500;
+    margin: 9px;
+}
+
+.botoes-card {
+    width: 328px;
+}
+
+button {
+    width: 139px;
+    height: 48px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.video {
+    color: #FFFFFF;
+    background-color: #FFB050;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px rgba(255, 176, 80, 0.16);
+    margin-right: 18px;
+}
+
+.audio {
+    color: #464646;
+    background-color: #ECECEC;
+    border: 1px solid #ECECEC;
+    border-radius: 8px;
+}
+
+.endereço {
+    width: 328px;
+    color: #FFFFFF;
+    background-color: #4894FF;
+    box-shadow: 0px 4px 16px rgba(72, 148, 255, 0.16);
+    border: none;
+    border-radius: 8px;
 }

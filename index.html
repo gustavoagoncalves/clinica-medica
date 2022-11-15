@@ -25,53 +25,83 @@
             </div>
         </div>
     </section>
-    <div class="hoje">
+    <div class="dia">
         <h3>Hoje</h3>
     </div>
     <section class="cards">
-        <div class="remota"> 
-            <div class="header-card">
-                <img src="./assets/luciana-dias.svg" alt="Foto do paciente">
-                <h4>Luciana Dias</h4>
-                <img src="./assets/camera.svg" alt="Ligar por vídeo">
-                <span>Consulta Remota</span>
-                <img src="./assets/chat.svg" alt="Chat">
-            </div>       
-            <div>
-                <P>14:00 - 15:00 (1 hora)</P>
-                <button class="video">Ligar por Vídeo</button>
-                <button class="audio">Ligar por Áudio</button>  
-            </div>
-        </div>
-
-        <div class="presencial">
-            <div class="local">
-                <img src="./assets/larissa-santana.svg" alt="Foto do paciente">
-                <h4>Larissa Santana</h4>
-                <img src="./assets/pin.svg" alt="Pin do local">
-                <span>Consulta no local</span>
-                <img src="./assets/chat.svg" alt="Chat">
-            </div>
-            <div>
-                <P>16:00 - 17:00 (1 hora)</P>
-                <button class="endereço">Ver Endereço</button>
-            </div>
-        </div>
-
-        <div class="remota">
-            <div class="header-card">
-                <img src="./assets/marcos-correia.svg" alt="Foto do paciente">
-                <h4>Marcos Correia</h4>
-                <img src="./assets/camera.svg" alt="Ligar por vídeo">
-                <span>Consulta Remota</span>
-                <img src="./assets/chat.svg" alt="Chat">
-            </div>
-            <div>
-                <P>17:20 - 18:00 (40 minutos)</P>
-                <button class="video">Ligar por Vídeo</button>
-                <button class="audio">Ligar por Áudio</button>
-            </div>
-        </div>
+        <ul>
+            <li>
+                <div class="consulta-card"> 
+                    <div class="header-card">
+                        <div class="consulta-card_paciente">
+                            <img src="./assets/luciana-dias.svg" alt="Foto do paciente">
+                            <div>
+                                <span>
+                                    <img src="./assets/camera.svg" alt="Câmera">
+                                    <span class="camera" aria-hidden="true">Consulta Remota</span>
+                                </span>
+                                <strong>Luciana Dias</strong>
+                            </div>
+                            <button class="card-chat"></button>
+                        </div>
+                    </div>       
+                    <div class="botoes-card">
+                        <P>14:00 - 15:00 (1 hora)</P>
+                        <button class="video">Ligar por vídeo</button>
+                        <button class="audio">Ligar por áudio</button>  
+                    </div>
+                </div>
+            </li>   
+            <li>
+                <div class="consulta-card"> 
+                    <div class="header-card">
+                        <div class="consulta-card_paciente">
+                            <img src="./assets/larissa-santana.svg" alt="Foto do paciente">
+                            <div>
+                                <span>
+                                    <img src="./assets/pin.svg" alt="Câmera">
+                                    <span class="camera" aria-hidden="true">Consulta no local</span>
+                                </span>
+                                <strong>Larissa Santana</strong>
+                            </div>
+                            <button class="card-chat"></button>
+                        </div>
+                    </div>       
+                    <div class="botoes-card">
+                        <P>16:00 - 17:00 (1 hora)</P>
+                        <button class="endereço">Ver endereço</button>
+                    </div>
+                </div>
+            </li>   
+            <li>
+                <div class="consulta-card"> 
+                    <div class="header-card">
+                        <div class="consulta-card_paciente">
+                            <img src="./assets/marcos-correia.svg" alt="Foto do paciente">
+                            <div>
+                                <span>
+                                    <img src="./assets/camera.svg" alt="Câmera">
+                                    <span class="camera" aria-hidden="true">Consulta Remota</span>
+                                </span>
+                                <strong>Marcos Correia</strong>
+                            </div>
+                            <button class="card-chat"></button>
+                        </div>
+                    </div>       
+                    <div class="botoes-card">
+                        <P>17:20 - 18:00 (40 minutos)</P>
+                        <button class="video">Ligar por vídeo</button>
+                        <button class="audio">Ligar por áudio</button>  
+                    </div>
+                </div>
+            </li>   
+        </ul>
     </section>
+    <!-- <footer>
+        <span>Consultas</span>
+        <span>Clientes</span>
+        <span>Relatórios</span>
+        <span>Menu</span>
+    </footer> -->
 </body>
 </html>
